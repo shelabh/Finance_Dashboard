@@ -34,8 +34,8 @@ const Chart = () => {
 	      stack: true,
 	      showMajorLabels: true,
 	      showCurrentTime: false,
-	      zoomMin: 1000 * 60 * 60 * 24 * 365 * 3, // three years in milliseconds
-	      zoomMax: 1000 * 60 * 60 * 24 * 365 * 3, // three years in milliseconds
+	      zoomMin: 1000 * 60 * 60 * 24 * 365 * 3, 
+	      zoomMax: 1000 * 60 * 60 * 24 * 365 * 3, 
 	      zoomable: false,
 	      start: '2024-01-01',
 	      end: '2026-12-31',
@@ -43,7 +43,7 @@ const Chart = () => {
 	      margin: { item: 10 },
 	      format: {
 		minorLabels: {
-		  month: 'MMM', // Use the short month format
+		  month: 'MMM', 
 		  day: '',
 		},
 		majorLabels: {
