@@ -1,41 +1,25 @@
 import React from 'react';
 import Logo from '../../components/Logo.tsx'
-import Hover_Button from '../../components/Buttons/Hover_Button.tsx';
+import Profile_Button from '../../components/Buttons/Profile_Button.tsx';
+import Support_Button from '../../components/Buttons/Support_Button.tsx';
 
 
 const Navbar = () => {
 	return (
 		<>
-			<div className='flex flex-row justify-between p-10'>
-				<div className='flex flex-row gap-10'>
+			<div className='flex flex-row justify-between items-center py-5 px-16 border'>
+				<div className=''>
 					<Logo />
-					<div>
-						Solutions and Services
-					</div>
-					<div>
-						Resources
-					</div>
-					<div>
-						Switch to Mailchimp
-					</div>
-					<div>
-						Pricing
-					</div>
 				</div>
-				<div className='flex flex-row gap-10'>
-					<img src="/" alt="" />
+				<div className='flex flex-row gap-10 font-medium items-center'>
 					<div>
-						<img src="/" alt="" />
-						<span>
-							EN
-						</span>
-						<img src="/" alt="" />
+						Dashboard
 					</div>
 					<div>
-						Sales:+1(800) 315-5939
+						FAQs
 					</div>
-					<Hover_Button />
-					<Hover_Button />
+					<Support_Button />
+					<Profile_Button />
 				</div>	
 			</div>
 		</>
